@@ -24,8 +24,10 @@ async function send() {
          },
          body: JSON.stringify({qoute: qouteInput.value, person: personInput.value})
       }
-   
+      
+      //send
       const res = await fetch('/send', options)
+      //gets a response 
       const data = await res.json()
       console.log(data.status)
       
